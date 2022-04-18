@@ -1,0 +1,82 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 25,
+      "address": "Nowhere"
+    },
+    {
+      "id": 2,
+      "name": "Jason Bourne",
+      "age": 34,
+      "address": "Unknown"
+    },
+    {
+      "id": 3,
+      "name": "William Norton",
+      "age": 30,
+      "address": "One Place"
+    },
+    {
+      "id": 4,
+      "name": "Mike Motown",
+      "age": 38,
+      "address": "The Next Place"
+    },
+    {
+      "id": 5,
+      "name": "Mike Zambia",
+      "age": 22,
+      "address": "The Final Place"
+    },
+    {
+      "id": 6,
+      "name": "David Lucani",
+      "age": 32,
+      "address": "The Last Frontier"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "name": "Game Developer"
+    },
+    {
+      "id": 2,
+      "name": "Backend Developer"
+    },
+    {
+      "id": 3,
+      "name": "Frontend Developer"
+    },
+    {
+      "id": 4,
+      "name": "Mobile App Developer"
+    }
+  ],
+  "competences": [
+    {
+      "id": 1,
+      "studentId": 1,
+      "skillId": 1
+    },
+    {
+      "id": 2,
+      "studentId": 2,
+      "skillId": 2
+    },
+    {
+      "id": 3,
+      "studentId": 2,
+      "skillId": 1
+    },
+    {
+      "id": 4,
+      "studentId": 2,
+      "skillId": 3
+    }
+
+  ]
+
+}
