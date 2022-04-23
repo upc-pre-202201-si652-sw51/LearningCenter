@@ -11,6 +11,13 @@ import { AboutComponent } from './public/about/about.component';
 import { StudentsComponent } from './students/pages/students/students.component';
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {MatTableModule} from "@angular/material/table";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatInputModule} from "@angular/material/input";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatIconModule} from "@angular/material/icon";
+import {MatSortModule} from "@angular/material/sort";
 
 @NgModule({
   declarations: [
@@ -25,7 +32,15 @@ import { MatButtonModule } from "@angular/material/button";
     BrowserAnimationsModule,
     HttpClientModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatSortModule
   ],
   providers: [StudentsService],
   bootstrap: [AppComponent]
