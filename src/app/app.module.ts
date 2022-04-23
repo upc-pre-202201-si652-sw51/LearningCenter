@@ -9,6 +9,8 @@ import { StudentsService } from "./students/services/students.service";
 import { HomeComponent } from './public/home/home.component';
 import { AboutComponent } from './public/about/about.component';
 import { StudentsComponent } from './students/pages/students/students.component';
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatButtonModule } from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { StudentsComponent } from './students/pages/students/students.component'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatToolbarModule,
+    MatButtonModule
   ],
   providers: [StudentsService],
   bootstrap: [AppComponent]
