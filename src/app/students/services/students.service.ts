@@ -8,7 +8,7 @@ import { Student} from "../model/student";
 })
 export class StudentsService {
   // Students Endpoint
-  basePath = 'http://localhost:3000/api/v1/students/';
+  basePath = 'http://localhost:3000/api/v1/students';
 
   httpOptions = {
     headers: new HttpHeaders({

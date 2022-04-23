@@ -35,6 +35,12 @@
       "name": "David Lucani",
       "age": 32,
       "address": "The Last Frontier"
+    },
+    {
+      "id": 7,
+      "name": "Jordan Knight",
+      "age": 33,
+      "address": "The Town"
     }
   ],
   "skills": [
@@ -76,7 +82,5 @@
       "studentId": 2,
       "skillId": 3
     }
-
   ]
-
 }
