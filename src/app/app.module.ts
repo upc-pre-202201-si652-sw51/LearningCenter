@@ -21,6 +21,7 @@ import {MatSortModule} from "@angular/material/sort";
 import { SignInComponent } from './security/pages/sign-in/sign-in.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
+import {MatDividerModule} from "@angular/material/divider";
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import {MatGridListModule} from "@angular/material/grid-list";
     MatIconModule,
     MatSortModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatDividerModule
   ],
   providers: [StudentsService],
   bootstrap: [AppComponent]

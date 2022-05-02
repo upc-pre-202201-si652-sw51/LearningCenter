@@ -16,7 +16,7 @@
         <mat-grid-tile>
           <mat-form-field style="width: 100%">
             <mat-label>Password</mat-label>
-            <input matInput placeholder="Your password" formControlName="password" required/>
+            <input matInput type="password" placeholder="Your password" formControlName="password" required/>
             <div *ngIf="password.invalid && (password.dirty || password.touched)">
               <mat-error *ngIf="password.errors?.['minlength']">Password must be at least 6 characters length.</mat-error>
               <mat-error *ngIf="password.errors?.['required']">Password is required.</mat-error>

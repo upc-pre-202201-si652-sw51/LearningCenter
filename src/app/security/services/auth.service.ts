@@ -51,6 +51,10 @@ export class AuthService {
     localStorage.setItem('accessToken', accessToken);
   }
 
+  // Get Current User
+  getCurrentUser() {
+    return localStorage.getItem('currentUser');
+  }
   // Set Current User
   setCurrentUser(user: string) {
     localStorage.setItem('currentUser', user);

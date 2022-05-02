@@ -6,5 +6,11 @@
   <a mat-button [routerLink]="'/home'">Home</a>
   <a mat-button [routerLink]="'/students'">Students</a>
   <a mat-button [routerLink]="'/about'">About</a>
+  <mat-divider [vertical]="true" [inset]="true"></mat-divider>
+  <a *ngIf="getCurrentUserEmail() === null" mat-button [routerLink]="'/sign-in'">Sign-In</a>
+  <div *ngIf="getCurrentUserEmail">
+    <a mat-button>{{ getCurrentUserEmail() }}</a>
+    <a mat-button (click)="signOut()">Sign-Out</a>
+  </div>
 </mat-toolbar>
 <router-outlet></router-outlet>
