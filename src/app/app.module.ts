@@ -18,13 +18,15 @@ import {MatInputModule} from "@angular/material/input";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatIconModule} from "@angular/material/icon";
 import {MatSortModule} from "@angular/material/sort";
+import { SignInComponent } from './security/pages/sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    StudentsComponent
+    StudentsComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,

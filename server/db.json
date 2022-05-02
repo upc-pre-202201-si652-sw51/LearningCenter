@@ -82,5 +82,29 @@
       "studentId": 2,
       "skillId": 3
     }
+  ],
+  "criteria": [
+    {
+      "id": 1,
+      "name": "Skill 1Criterion 1",
+      "skillId": 1
+    },
+    {
+      "id": 2,
+      "name": "Skill 1Criterion 2",
+      "skillId": 1
+    },
+    {
+      "id": 3,
+      "name": "Skill 2Criterion 1",
+      "skillId": 2
+    }
+  ],
+  "users": [
+    {
+      "email": "john.doe@gmail.com",
+      "password": "$2a$10$6c1REzivyNs2jQ82XSFPH.YZYg/z5vf3PI/uUHc/o5nmhFujZTO5q",
+      "id": 1
+    }
   ]
 }

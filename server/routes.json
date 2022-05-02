@@ -1,3 +1,9 @@
 {
-  "/api/v1/*" : "/$1"
+  "/api/v1/*" : "/$1",
+  "/students/:studentId/skills": "/competences?studentId=:studentId&_expand=skill",
+  "/skills/:skillId/students": "/competences?skillId=:skillId&_expand=student",
+  "/students/:studentId/skills/:skillId/criteria": "/criteria?skillId=:skillId",
+  "/auth/*": "/$1",
+  "/sign-in": "/signin",
+  "/sign-up": "/signup"
 }
