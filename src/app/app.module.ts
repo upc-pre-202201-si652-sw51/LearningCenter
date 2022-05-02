@@ -19,6 +19,8 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatIconModule} from "@angular/material/icon";
 import {MatSortModule} from "@angular/material/sort";
 import { SignInComponent } from './security/pages/sign-in/sign-in.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatGridListModule} from "@angular/material/grid-list";
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { SignInComponent } from './security/pages/sign-in/sign-in.component';
     MatInputModule,
     MatFormFieldModule,
     MatIconModule,
-    MatSortModule
+    MatSortModule,
+    MatCardModule,
+    MatGridListModule
   ],
   providers: [StudentsService],
   bootstrap: [AppComponent]

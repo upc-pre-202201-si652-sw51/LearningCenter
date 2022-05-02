@@ -1,1 +1,33 @@
-<p>sign-in works!</p>
+<mat-card>
+  <mat-card-title>Sign-In</mat-card-title>
+  <form [formGroup]="signInForm">
+    <div>
+      <mat-grid-list cols="1" rowHeight="100px">
+        <mat-grid-tile>
+          <mat-form-field style="width: 100%">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="user@domain.com" formControlName="email" required/>
+            <div *ngIf="email.invalid && (email.dirty || email.touched)">
+              <mat-error *ngIf="email.errors?.['email']">Your must enter valid email address.</mat-error>
+              <mat-error *ngIf="email.errors?.['required']">Email is required.</mat-error>
+            </div>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field style="width: 100%">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Your password" formControlName="password" required/>
+            <div *ngIf="password.invalid && (password.dirty || password.touched)">
+              <mat-error *ngIf="password.errors?.['minlength']">Password must be at least 6 characters length.</mat-error>
+              <mat-error *ngIf="password.errors?.['required']">Password is required.</mat-error>
+            </div>
+          </mat-form-field>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+    <mat-card-actions align="end">
+      <button mat-button class="material-button" (click)="cancelSignIn()">Cancel</button>
+      <button mat-button class="material-button" (click)="signIn()">Sign-In</button>
+    </mat-card-actions>
+  </form>
+</mat-card>
