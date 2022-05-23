@@ -12,6 +12,6 @@ public interface SkillService {
   Page<Skill> getAll(Pageable pageable);
   Skill getById(Long skillId);
   Skill create(Skill skill);
-  Skill update(Skill skill);
+  Skill update(Long id, Skill skill);
   ResponseEntity<?> delete(Long skillId);
 }
