@@ -36,6 +36,10 @@ public class CriterionServiceImpl implements CriterionService {
 
 
   @Override
+  public List<Criterion> getAll() {
+    return criterionRepository.findAll();
+  }
+  @Override
   public List<Criterion> getAllBySkillId(Long skillId) {
     return criterionRepository.findBySkillId(skillId);
   }

@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import java.util.List;
 
 public interface CriterionService {
+  List<Criterion> getAll();
   List<Criterion> getAllBySkillId(Long skillId);
   Page<Criterion> getAllBySkillId(Long skillId, Pageable pageable);
   Criterion create(Long skillId, Criterion criterion);
