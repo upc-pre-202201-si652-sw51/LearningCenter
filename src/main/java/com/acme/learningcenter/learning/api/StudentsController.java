@@ -5,11 +5,18 @@ import com.acme.learningcenter.learning.mapping.StudentMapper;
 import com.acme.learningcenter.learning.resource.CreateStudentResource;
 import com.acme.learningcenter.learning.resource.StudentResource;
 import com.acme.learningcenter.learning.resource.UpdateStudentResource;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+@Tag(name = "Students")
 @RestController
 @RequestMapping("api/v1/students")
 public class StudentsController {
@@ -22,6 +29,12 @@ public class StudentsController {
     this.mapper = mapper;
   }
 
+  @Operation(summary = "Get students", description = "Get All Students.")
+  @ApiResponses(value = {
+    @ApiResponse(responseCode = "200", description = "Students found",
+    content = { @Content(mediaType = "application/json",
+    schema = @Schema(implementation = StudentResource.class))})
+  })
   @GetMapping
   public Page<StudentResource> getAllStudents(Pageable pageable) {
     return mapper.modelListPage(studentService.getAll(), pageable);

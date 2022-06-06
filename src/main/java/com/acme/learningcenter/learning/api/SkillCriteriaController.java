@@ -5,11 +5,13 @@ import com.acme.learningcenter.learning.mapping.CriterionMapper;
 import com.acme.learningcenter.learning.resource.CreateCriterionResource;
 import com.acme.learningcenter.learning.resource.CriterionResource;
 import com.acme.learningcenter.learning.resource.UpdateCriterionResource;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+@Tag(name = "Skills")
 @RestController
 @RequestMapping("/api/v1/skills/{skillId}/criteria")
 public class SkillCriteriaController {
